@@ -27,4 +27,4 @@ Complete scanner denial of service. The system may be rendered completely unscan
 
 ## Example
 
-Create a folder named "1A" in C:\, so that AV scanners that perform full scans alphabetically will scan this folder immediately. Mark the folder as an NTFS compressed folder. Fill this folder with many slightly edited, malicious tarball bombs. The effect is catastrophic: a system full-scan can be rendered nearly impossible.
+Create a folder named "1A" in C:\, so that AV scanners that perform full scans alphabetically will scan this folder immediately. Mark the folder as an NTFS compressed folder. Fill this folder with many slightly edited, malicious tarball bombs. The effect is catastrophic: a full scan can be rendered nearly impossible.
