@@ -3,10 +3,10 @@
 Several AV scanners are vulnerable to an attack that can lead to scanner denial of service. A tarball must be created to maximize file density. To do so, a text file containing the words "hello" (anything under 512 bytes should suffice) and was tarred with format=gnu. The format is not particularly important. All but the first 1024 bytes were removed, so as to increase tar file density. All bytes after the first 1024 are unnecessary padding.
 
 
-Tar files, in their essence, are linked lists. Tar files can be concatenated together thousands of times to contain thousands of files. In this case, a ten-megabyte file and a one-hundred-megabyte file were created by repeatedly concatenating the initial tar file together. Traversing this file is a slow process.
+Tar files, in their essence, are linked lists. Tar files can be concatenated together thousands of times to contain thousands of files. In this case, a ten-megabyte file and a one-hundred-megabyte file were created by repeatedly concatenating the initial tar file together. Traversing this file is a slow and potentially CPU intensive process.
 
 
-Simply gzipping the result creates a file that takes up an enormous amount of scanner resources  while consuming relatively few bytes. On its own, this is not enormously severe. However, the produced tar files serve as a building block for an escalation of the attack vector. If an attacker creates a folder in a frequently scanned directory (say, for instance, creating the folder C:\1A on a system that receives full scans often.,) with thousands of these files, each subtly different, the system becomes practically unscannable.
+Simply gzipping the result creates a file that takes up an enormous amount of scanner resources  while consuming relatively few bytes. On its own, this is not enormously severe. However, the produced tar files serve as a building block for an escalation of the attack vector. If an attacker creates a folder in a frequently scanned directory (say, for instance, creating the folder C:\1A on a system that receives full scans often.) with thousands of these files, each subtly different, the system becomes practically unscannable.
 
 
 ## Resources:
