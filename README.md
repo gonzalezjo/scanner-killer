@@ -23,4 +23,8 @@ Simply gzipping the result creates a file that takes up an enormous amount of sc
 
 ## Impact
 
-Complete scanner denial of service. The system may be rendered completely unscannable. As a result, a vast amount of Kaspersky's security features are defeated.
+Complete scanner denial of service. The system may be rendered completely unscannable. As a result, a vast amount of AV security features are defeated.
+
+## Example
+
+Create a folder named "1A" in C:\, so that AV scanners that perform full scans alphabetically will scan this folder immediately. Mark the folder as an NTFS compressed folder. Fill this folder with many slightly edited, malicious tarball bombs. The effect is catastrophic: a system full-scan can be rendered nearly impossible.
